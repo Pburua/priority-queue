@@ -1,49 +1,52 @@
 const Node = require('./node');
 
 class MaxHeap {
-	constructor() {
-		
-	}
+    constructor() {
+        this.root = null;
+        this.parentNodes = [];
+    }
 
-	push(data, priority) {
-		
-	}
+    push(data, priority) {
+        this.insertNode(new Node(data, priority));
+        this.shiftNodeUp(new Node(data, priority));
 
-	pop() {
-		
-	}
+    }
 
-	detachRoot() {
-		
-	}
+    pop() {
 
-	restoreRootFromLastInsertedNode(detached) {
-		
-	}
+    }
 
-	size() {
-		
-	}
+    detachRoot() {
 
-	isEmpty() {
-		
-	}
+    }
 
-	clear() {
-		
-	}
+    restoreRootFromLastInsertedNode(detached) {
 
-	insertNode(node) {
-		
-	}
+    }
 
-	shiftNodeUp(node) {
-		
-	}
+    size() {
 
-	shiftNodeDown(node) {
-		
-	}
+    }
+
+    isEmpty() {
+
+    }
+
+    clear() {
+
+    }
+
+    insertNode(node) {
+    }
+
+
+
+    shiftNodeUp(node) {
+    }
+
+    shiftNodeDown(node) {
+
+    }
 }
 
 module.exports = MaxHeap;
